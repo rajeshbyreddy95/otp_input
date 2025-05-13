@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import img from './iimmgg.jpeg'
 const Toast = ({ message, type, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -90,6 +90,7 @@ const OtpInput = () => {
   return (
     <div className="min-h-screen bg-orange-300 flex items-center justify-center">
       <div className="bg-white p-4 sm:p-8 rounded-lg shadow-lg w-full max-w-xs sm:max-w-md">
+      <img src={img}/>
         <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Enter OTP</h2>
         <form onSubmit={handleSubmit} className="flex flex-col items-center">
           <div className="flex space-x-1 sm:space-x-2 mb-4 sm:mb-6" onPaste={handlePaste}>
